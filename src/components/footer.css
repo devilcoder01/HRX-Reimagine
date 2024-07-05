@@ -1,0 +1,106 @@
+@keyframes ambientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.fsection{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    margin-top: 10rem;
+    /* padding: 5rem 0; */
+
+}
+.outerf1 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 7rem;
+
+}
+.fot-ch1{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.fcol-1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem
+    
+}
+.flsec{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.subtxt{
+    color: #e8603a;
+}
+.ftimg{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ftimg img {
+    width: 20%;;
+}
+
+.frsec {
+    display: flex;
+    column-gap: 8rem;
+    /* position: absolute; */
+}
+
+.fc-col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    font-size: 1.1rem;
+    
+}
+.fot-ch2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 2px solid #373737;
+    /* font-size: 18px; */
+}
+.danda {
+    width: 20px;
+    height: 100%;
+    background-color: white;
+}
+
+.nav-cm-logo {
+    display: flex;
+    gap: 1.2rem; /* Adjust this value to increase or decrease space between icons */
+  }
+  
+  .nav-cm-logo a {
+    color: #fff; /* Adjust color as needed */
+    font-size: 2rem; /* Adjust size as needed */
+  }
+  .copyright{
+    color: #dadada;
+  }

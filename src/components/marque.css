@@ -1,0 +1,38 @@
+.marque-section {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: hidden; */
+}
+
+.outerBox {
+  overflow: hidden;
+  width: 90%;
+  padding: 20px 0;
+  background-color: #000000; /* Adjust as needed */
+}
+
+.run-logo-marque {
+  display: flex;
+  width: 300%; /* Adjust based on the number of repeating sections */
+}
+
+.m-s-sc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.img-elem {
+  flex: 0 0 auto;
+  margin: 0 5rem; /* Adjust spacing between logos */
+}
+
+.img-size-mrk {
+  height: 6.25rem; /* Fixed height for all logos */
+  width: 6.25rem; /* Fixed width for all logos */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+

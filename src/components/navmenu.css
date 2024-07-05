@@ -1,0 +1,76 @@
+#nav-container {
+    position: fixed;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.834);
+    /* box-shadow: 0 8px 32px 0 rgba(135, 62, 31, 0.37); */
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(20px);
+    /* border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18); */
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#menu-shower {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Ensure vertical layout */
+    overflow: hidden;
+}
+
+
+#logo img {
+    height: 10%;
+    /* width: 10%; */
+    /* position: fixed; */
+    left: 5vw;
+}
+
+#cntr {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+#cntr h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#style {
+    height: 40vh;
+    width: 35vw;
+    position: absolute;
+    bottom: 13vh;
+    left: 5vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+#style1 {
+    height: 35%;
+    width: 1.45%;
+    position: relative;
+    background-color: rgb(223, 62, 62);
+}
+
+#style2 {
+    height: 35%;
+    width: 80%;
+    position: relative;
+    border-radius: 30px;
+    background-color: rgb(217, 208, 208);
+}

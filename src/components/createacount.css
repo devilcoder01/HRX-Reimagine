@@ -1,0 +1,145 @@
+.main-logbox {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.loginbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 60vw;
+    align-items: center;
+}
+.right-headbox, .left-headbox {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.right-headbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1.152rem;
+    width: 50%;
+}
+
+.login-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 0.65rem;
+}
+
+.login-logo img {
+    width: 10rem;
+}
+
+.login-middle{
+    font-size: 1.25rem;
+}
+
+.login_sign {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+}
+
+.register_link {
+    font-size: 0.735rem;
+    display: flex;
+    row-gap: 0.5rem;
+    flex-direction: column;
+}
+
+.register_link a {
+    color: #e85353;
+    text-decoration: none;
+}
+
+.signlogo {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.signlogo img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.left-headbox {
+    width: 70%;
+}
+.left-headbox h1{
+    font-size: 2.5rem;
+    color: #dadada;
+    margin-bottom: 1.925rem;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group label {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.form-group input {
+    background-color: #1b1b1b;
+    color: #dadada;
+    padding: 0.85rem 1rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+}
+
+.form-group input::placeholder {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #8e8e8e;
+    /* font-weight: 600; */
+}
+
+.form-row .form-group {
+    width: 48%;
+}
+
+.big-row .form-group {
+    width: 100%;
+}
+
+.form-btn{
+    margin-top: 15px;
+}
+.form-btn button{
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #e85353;
+    color: #dadada;
+    font-size: 1rem;
+    font-weight: 600;
+}

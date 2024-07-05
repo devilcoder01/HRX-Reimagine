@@ -1,0 +1,230 @@
+.heropage-ct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000101;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.box-hero {
+    height: 80vh;
+    width: 90vw;
+    background-color: #C7B9AE;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin: 0px 45px;
+}
+
+.box-l {
+    /* margin-left: 3%; */
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box-text h2 {
+    font-size: 4.8rem;
+    font-weight: 800;
+}
+
+.bt-jt {
+    border-style: none;
+    font-size: 1.9rem;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-family: "Roboto", sans-serif;
+    background-color: #e85353;
+    color: #dadada;
+}
+
+.box-j-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.bt-jt-cir {
+    height: 45px;
+    width: 45px;
+    border: 3.5px solid black;
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bt-child-cir {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #e85353;
+
+}
+
+.box-r {
+    width: 58%;
+
+    /* border-radius: 50px; */
+    /* background-color: aqua; */
+}
+.box-r video{
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.box-trac {
+    gap: 30px;
+    display: flex;
+    margin-top: 6%;
+    padding-top: 3%;
+
+}
+
+.c-tx {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.c-subtxt {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.hf-circle-1 {
+
+    position: absolute;
+    width: 28vw;
+    height: 28vw;
+    left: 20%;
+    top: -45%;
+    border-radius: 50%;
+    background: #ECE7E7;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hf-circle-2 {
+    position: absolute;
+    width: 27.5vw;
+    height: 27.5vw;
+    left: -15%;
+    top: 62%;
+    border-radius: 50%;
+    background: #ECE7E7;
+    overflow: hidden;
+    z-index: 1;
+}
+.bx-bubble{
+    /* Ellipse 15 */
+    height: 400px;
+    width: 400px;
+    background-color: #ECE7E7;
+    position: absolute;
+    top: 25%;
+    border-radius: 25% 75% 38% 62% / 47% 34% 66% 53% ;
+    /* z-index: 12; */
+    animation-name: blobby;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    mix-blend-mode: luminosity;
+    left: 54%;
+}
+.big-explor-cir{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #e85353;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -5%;
+    right: 20%;
+
+}
+.child-exp-cir{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #a72c1a;
+    z-index: 6;
+    
+    
+}
+
+@keyframes blobby {
+    0% {
+      border-radius: 50%;
+    }
+    20% {
+      border-radius: 41% 59% 41% 59% / 53% 51% 49% 47%;
+      transform: rotate(36deg);
+    }
+    40% {
+      transform: rotate(72deg);
+      border-radius: 43% 57% 41% 59% / 53% 52% 48% 47%;
+    }
+    80% {
+      border-radius: 48% 52% 41% 59% / 48% 58% 42% 52%;
+      transform: rotate(108deg);
+    }
+    100% {
+      transform: rotate(144deg);
+      border-radius: 54% 46% 60% 40% / 43% 55% 45% 57%;
+    }
+  }
+
+  .join-cirbtn {
+    position: relative;
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .join-cirbtn p {
+    font-size: 24px; /* Adjust the font size as needed */
+    position: absolute;
+    transform-origin: 50% 100%;
+    transform: rotateX(0) rotate(0);
+    animation: rotate 10s linear infinite;
+  }
+  
+  .join-cirbtn p span {
+    display: inline-block;
+    transform-origin: 50% 100%;
+    transform: rotate(0);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateX(0) rotate(0);
+    }
+    to {
+      transform: rotateX(0) rotate(360deg);
+    }
+  }

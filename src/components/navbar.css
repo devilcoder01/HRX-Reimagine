@@ -1,0 +1,112 @@
+.nav {
+
+    height: 6rem;
+    width: 100vw;
+    background-color: #010100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dadada;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+    transition: transform 0.7s ease;
+    z-index: 20;
+
+
+}
+
+.lboss-nav {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #dadada;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+    transition: transform 0.7s ease;
+}
+
+.nav.hidden {
+    transform: translateY(-100px);
+    /* Adjust the value based on your navbar height */
+}
+
+.nav-m {
+    position: relative;
+
+}
+
+.navtogglebtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 40px; */
+    /* height: 40px; */
+    position: relative;
+    z-index: 2;
+}
+
+.navtogglebtn svg {
+    width: 50px;
+
+}
+.nav-l{
+    width: 20rem;
+}
+.nav-l img {
+    width: 30%;
+
+
+}
+
+
+
+.nav-btn button {
+    background-color: transparent;
+    /* border:2px solid #F16363; */
+    border-style: none;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+/* nav-btn button:hover{
+    color: #F16363;
+} */
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid #F16363; */
+    border-radius: 7px;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 4rem;
+}
+
+
+.nav-btn button a {
+    text-decoration: none;
+    color: #dadada;
+}
+
+.nav-r {
+    width: 20rem;
+    column-gap: 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}

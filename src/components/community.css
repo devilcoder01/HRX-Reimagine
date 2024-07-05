@@ -1,0 +1,155 @@
+.community-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dadada;
+  overflow: hidden;
+  height: 100vh;
+  margin: 5rem 0;
+  position: relative; /* Add this to enable absolute positioning for the filter */
+}
+
+.cmnty-chd {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  height: 100%;
+  position: relative;
+}
+
+.community-content {
+  flex: 1;
+  max-width: 40%;
+  position: relative;
+  z-index: 5;
+}
+
+.community-content h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.community-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.community-slider {
+  width: 70%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.comnty-filter {
+  width: 60%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  transform: rotate(-15deg); /* Rotate the slider */
+}
+
+.community-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    /* rgba(0, 0, 0, 0.2) 80%, */
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.community-slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    /* rgba(0, 0, 0, 0.2) 80%, */
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.slide-tr {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 10px;
+}
+
+.slide-tr img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+  .community-container {
+    flex-direction: column;
+  }
+
+  .community-content {
+    max-width: 90%;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .community-slider {
+    width: 100%;
+    height: 60vh;
+    transform: none; /* Remove rotation on smaller screens for better UX */
+  }
+
+  .slide {
+    flex: 0 0 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .community-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .community-content p {
+    font-size: 1rem;
+  }
+
+  .community-slider {
+    height: 50vh;
+    transform: none; /* Remove rotation on smaller screens for better UX */
+  }
+
+  .slide {
+    flex: 0 0 90%;
+  }
+}

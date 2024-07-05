@@ -1,0 +1,130 @@
+.lm-login-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+  }
+  
+  .lm-login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 60vw;
+    align-items: center;
+  }
+  
+  .lm-login-left-panel, .lm-login-right-panel {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lm-login-left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.152rem;
+    width: 50%;
+  }
+  
+  .lm-login-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 0.65rem;
+  }
+  
+  .lm-login-brand img {
+    width: 10rem;
+  }
+  
+  .lm-login-description {
+    font-size: 1.25rem;
+  }
+  
+  .lm-login-alternative {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .lm-login-social-icons {
+    display: flex;
+    column-gap: 1.5rem;
+  }
+  
+  .lm-login-social-icons img {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .lm-login-right-panel {
+    width: 50%;
+  }
+  
+  .lm-login-right-panel h1 {
+    font-size: 2.5rem;
+    color: #dadada;
+    margin-bottom: 1.925rem;
+  }
+  
+  .lm-login-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .lm-login-form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lm-login-form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .lm-login-form-field input {
+    background-color: #1b1b1b;
+    color: #dadada;
+    padding: 0.85rem 1rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+  }
+  
+  .lm-login-form-field input::placeholder {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #8e8e8e;
+  }
+  
+  .lm-login-form-row .lm-login-form-field {
+    width: 100%;
+  }
+  
+  .lm-login-form-row-full .lm-login-form-field {
+    width: 100%;
+  }
+  
+  .lm-login-submit-button {
+    margin-top: 15px;
+  }
+  
+  .lm-login-submit-button button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #e85353;
+    color: #dadada;
+    font-size: 1rem;
+    font-weight: 600;
+  }

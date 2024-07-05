@@ -1,0 +1,205 @@
+#heropage {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    /* overflow-x: hidden; */
+    margin-bottom: 6rem;
+}
+
+#landing {
+    /* overflow-x: hidden; */
+    height: 75%;
+    width: 90%;
+    position: absolute;
+
+}
+
+
+.circles {
+    background-color: #E85252;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#circle1 {
+    height: calc(16vh + 16vw);
+    width: calc(16vh + 16vw);
+    top: -30%;
+    right: -10%;
+}
+
+#circle2 {
+    height: calc(15vh + 10vw);
+    width: calc(15vh + 10vw);
+    bottom: -20%;
+    left: -8%;
+}
+
+#content-holder {
+    background-color: transparent;
+    position: absolute;
+    top: 7vh;
+    left: 7vw;
+    color : #2e2e2e;
+    z-index: 10;
+}
+
+#span1,
+#span2 {
+    background-color: transparent;
+}
+
+#span1 h1,
+#span2 h1 {
+    width: 100%;
+    background-color: transparent;
+    font-size: calc(3.5vh + 3.5vw);
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #2e2e2e;
+    line-height: 12vh;
+    letter-spacing: -.2rem;
+}
+
+#content-holder button {
+    margin-top: 5vh;
+    height: 6vh;
+    width: 9vw;
+    background: #2e2e2e;
+    border: none;
+    color: #dadada;
+    border-radius: 4vh;
+    font-size: calc(1vw + 0.5vh);
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+}
+
+#circle_div {
+    margin-top: 5vh;
+    height: 19vh;
+    width: 19vh;
+    border-radius: 50%;
+    background: #E85252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #000101;
+}
+
+#inner-circle {
+    height: 11vh;
+    width: 11vh;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#inner-circle img {
+    height: 6vh;
+    width: 8vh;
+    background-color: transparent;
+    filter: invert(1);
+}
+
+#left_cut {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fbe9e0;
+}
+
+#right_cut {
+    position: absolute;
+    bottom: 7%;
+    right: 0;
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.rboxcon {
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/he1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.poligon-shap {
+    width: 60%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+    border-radius: calc(2vh + 2vw) 0 0 calc(2vh + 2vw);
+    overflow: hidden;
+}
+
+#stats {
+    right: 3vw;
+    bottom: 2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-color: transparent;
+    color: white;
+}
+
+#stat1,
+#stat2,
+#stat3 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#rotate-txt {
+    height: 160px;
+    font-size: 15px;
+    animation: animate 5s linear infinite;
+    
+
+}
+#circle_div span {
+    position: absolute;
+    transform-origin: 0 80px    ;
+}
+
+.number,
+.about {
+    /* background-color: transparent; */
+    /* font-weight: 600; */
+    font-size: 1.2rem;
+}
+
+.number {
+    font-size: calc(0.5vh + 1vw);
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+
+.about {
+    font-size: 1.68vh;
+    font-weight: 400;
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
