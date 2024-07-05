@@ -33,7 +33,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote add public https://github.com/devilcoder01/Hrx-Website.git
+        git remote add public https://${DEPLOY_KEY}@github.com/devilcoder01/Hrx-Website.git
         git fetch public
         if git rev-parse --verify public/gh-pages; then
           git reset public/gh-pages
