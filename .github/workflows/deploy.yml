@@ -42,17 +42,16 @@ jobs:
         git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
         git fetch origin
 
-        # Commit any changes in the current branch
-        git add .
-        git commit -m 'Temporary commit for deployment'
-
-        # Check if the gh-pages branch exists
+        git stash --all
         if git rev-parse --verify origin/gh-pages; then
           git checkout gh-pages
         else
           git checkout --orphan gh-pages
         fi
 
+        git reset --hard
+        git stash pop || true
+        
         git rm -rf .
         cp -r dist/* .
         touch .nojekyll
@@ -60,9 +59,5 @@ jobs:
         git add .
         git commit -m 'Deploy to GitHub Pages'
         git push origin gh-pages --force
-
-        # Return to the previous branch and remove the temporary commit
-        git checkout -
-        git reset --hard HEAD^
 
     
