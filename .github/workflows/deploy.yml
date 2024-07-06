@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust if your default branch is different
+      - feature/customcursor  # Adjust if your default branch is different
 
 jobs:
   build-and-deploy:
@@ -62,7 +62,7 @@ jobs:
         git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
         git checkout --orphan gh-pages
         git reset --hard
-
+        
         cp -r dist/* .
         touch .nojekyll
         
