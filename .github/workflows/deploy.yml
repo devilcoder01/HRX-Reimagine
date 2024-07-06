@@ -46,7 +46,7 @@ jobs:
         git remote -v
         git checkout --orphan gh-pages
         git reset --hard
-        ls --la
+        ls -la
         cp -r dist/* .
         touch .nojekyll
         git status
