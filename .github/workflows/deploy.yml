@@ -42,6 +42,10 @@ jobs:
           ls -la
           echo "Dist directory contents:"
           ls -la dist
+          echo "Git status:"
+          git status
+          echo "Git diff:"
+          git diff
 
     - name: Deploy to GitHub Pages
       env:
@@ -58,7 +62,6 @@ jobs:
         git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
         git fetch origin
 
-        git stash --all
         if git rev-parse --verify origin/gh-pages; then
           git checkout gh-pages
         else
@@ -66,12 +69,14 @@ jobs:
         fi
 
         git reset --hard
-        git stash pop || true
+
+        git rm -rf .
+
         
         cp -r dist/* .
         touch .nojekyll
         
-        git add .
+        git add -f .
         git commit -m 'Deploy to GitHub Pages'
         git push origin gh-pages --force
 
