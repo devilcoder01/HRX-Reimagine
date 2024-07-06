@@ -56,7 +56,7 @@ function MindFule() {
       <div className="Mindfule-2child">
       <div className="Mindfule-Heading">
         <div className="main-heading">
-          <h2><span style={{color:'#E85252'}}>HRX</span> Mind Fule</h2>
+          <h2><span style={{color:'#E85252'}}>HRX</span> Mind Fuel</h2>
         </div>
         <div className="resource-sec">
           <button>Xpod</button>
@@ -92,7 +92,7 @@ function MindFule() {
           </div>
           <div className="MD-text-sec">
             <div className="Mdchild-heading">
-              Level Up Your Finess Experence
+              Level Up Your Finess Experience
             </div>
             <div className="Mdchild-tagline" ref={tagline2Ref}>
             {splitTextToSpans("CONTENT TO ENERGIZE YOUR BODY AND MIND")}
