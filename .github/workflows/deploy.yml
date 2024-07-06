@@ -32,19 +32,28 @@ jobs:
         DEPLOY_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         PAT: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       run: |
+        set -x
         mkdir -p ~/.ssh
         echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        pwd
+        ls -la
+        git remote -v
         git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
+        git remote -v
         git checkout --orphan gh-pages
         git reset --hard
+        ls --la
         cp -r dist/* .
         touch .nojekyll
+        git status
         git add .
         git commit -m 'Deploy to GitHub Pages'
+        ssh -T git@github.com
+        git log --oneline -n 5
         git push origin gh-pages --force
 
 
