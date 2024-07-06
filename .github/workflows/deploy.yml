@@ -59,8 +59,4 @@ jobs:
         git commit -m 'Deploy to GitHub Pages'
         git push origin gh-pages --force
 
-    - name: Debug SSH key
-      run: |
-            ls -l ~/.ssh
-            ssh-keygen -l -f ~/.ssh/id_rsa
-            ssh -vT git@github.com
+    
