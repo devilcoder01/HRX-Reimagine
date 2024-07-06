@@ -42,9 +42,7 @@ jobs:
         git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
         git fetch origin
 
-        git add .
-        git commit -m 'Temporary commit for deployment'
-
+        git stash --all
         if git rev-parse --verify origin/gh-pages; then
           git checkout gh-pages
         else
@@ -52,13 +50,11 @@ jobs:
         fi
 
         git reset --hard
-        
         cp -r dist/* .
         touch .nojekyll
         
         git add .
         git commit -m 'Deploy to GitHub Pages'
         git push origin gh-pages --force
-        
 
     
