@@ -30,6 +30,7 @@ jobs:
     - name: Deploy to GitHub Pages
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        PAT: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       run: |
         mkdir -p ~/.ssh
         echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
@@ -52,3 +53,9 @@ jobs:
           ssh -vT git@github.com
           git remote -v
           git branch -a
+    
+    - name: Debug SSH key
+      run: |
+            ls -l ~/.ssh
+            ssh-keygen -l -f ~/.ssh/id_rsa
+            ssh -vT git@github.com
