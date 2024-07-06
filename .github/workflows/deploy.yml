@@ -45,3 +45,10 @@ jobs:
         git add .
         git commit -m 'Deploy to GitHub Pages'
         git push origin gh-pages --force
+
+        
+    - name: Debug Info
+      run: |
+          ssh -vT git@github.com
+          git remote -v
+          git branch -a
