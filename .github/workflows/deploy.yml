@@ -31,17 +31,19 @@ jobs:
       env:
         DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       run: |
+        set -x
+        mkdir -p ~/.ssh
+        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote add public https://${DEPLOY_KEY}@github.com/devilcoder01/Hrx-Website.git
-        git fetch public
-        if git rev-parse --verify public/gh-pages; then
-          git reset public/gh-pages
-        else
-          git checkout --orphan gh-pages
-        fi
+        git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
+        git checkout --orphan gh-pages
+        git reset --hard
         cp -r dist/* .
         touch .nojekyll
         git add .
+        git status
         git commit -m 'Deploy to GitHub Pages'
-        git push public HEAD:gh-pages --force
+        git push origin gh-pages --force
