@@ -26,6 +26,19 @@ jobs:
 
     - name: Build project
       run: npm run build
+      
+    - name: Verify dist directory
+      run: |
+        echo "Contents of dist directory:"
+        ls -la dist
+    
+    - name: Debug information
+      run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "Dist directory contents:"
+          ls -la dist
 
     - name: Deploy to GitHub Pages
       env:
