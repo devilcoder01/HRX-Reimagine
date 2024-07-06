@@ -19,8 +19,7 @@ const Collection = () => {
         "Equipment",
         "Watches",
         "Shoes",
-        "Eyewear",
-        "Footwear"
+        "Eyewear"
     ];
 
     useEffect(() => {

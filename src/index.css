@@ -29,7 +29,7 @@ body {
 /* Custom Scrollbar Styling for WebKit browsers */
 ::-webkit-scrollbar {
     background-color: transparent;
-    width: 5px;
+    width: 0.3vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -38,7 +38,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: #F16363;  /* Change color here for changing the color of scroller */
-    border-radius: 8px;
+    border-radius: 0.5vw;
 }
 
 

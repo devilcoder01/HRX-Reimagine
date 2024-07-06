@@ -13,7 +13,7 @@ function Pfooter() {
         <div className="flsec">
           <div className="ftimg">
             <img src="https://hrxbrand.com/img/MicrosoftHRX.0fe18b05.png" alt="" />
-            <div className="subtxt">#KEEPGOING</div>
+            <div className="subtxt">#Keepgoing</div>
           </div>
           <div className="nav-cm-logo">
             <a href=""><FontAwesomeIcon icon={faInstagram} /></a>

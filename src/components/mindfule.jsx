@@ -95,7 +95,7 @@ function MindFule() {
               Level Up Your Finess Experience
             </div>
             <div className="Mdchild-tagline" ref={tagline2Ref}>
-            {splitTextToSpans("CONTENT TO ENERGIZE YOUR BODY AND MIND")}
+            {splitTextToSpans("Content to energize your body and mind")}
             </div>
             <div className="Mdchild-content">
               Discover the latest content from Team HRX that will help you make your fitness journey exciting and engaging. Tune into content pieces like podcasts, Workout Videos and HRX Blogs to level up your knowledge and keep you in the zone

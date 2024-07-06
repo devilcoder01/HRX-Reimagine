@@ -19,7 +19,7 @@ const MainHeroPage = () => {
     text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
     const ele = text.querySelectorAll('span');
     for (let i = 1; i < ele.length; i++) {
-      ele[i].style.transform = `rotate(${i * 16.5}deg)`;
+      ele[i].style.transform = `rotate(${i * 15.4}deg)`;
     }
   }, []);
 
@@ -77,7 +77,7 @@ const MainHeroPage = () => {
             </div>
             <button>Join Now</button>
             <div id="circle_div">
-              <h3 id="rotate-txt" ref={textRef}> JOIN NOW JOIN NOW JOIN NOW </h3>
+              <h3 id="rotate-txt" ref={textRef}> Join Now - Join Now - Join Now - </h3>
               <div id="inner-circle">
                 <FontAwesomeIcon icon={faArrowDownLong} size='2x' color='#dadada' flip="vertical"   />
               </div>

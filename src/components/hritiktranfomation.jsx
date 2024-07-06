@@ -73,7 +73,7 @@ const TransformationTab = () => {
       
       <div className="HRXB-text-section">
         <div className="HRBX-head-sub">
-          <h3>HRX Transformation to Kabir and Beyond</h3>
+          <h2>HRX Transformation to Kabir and Beyond</h2>
         </div>
         <div className="HRBX-text-area">
           The journey is often more memorable than the destination.

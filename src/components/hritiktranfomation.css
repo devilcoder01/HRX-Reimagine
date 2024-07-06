@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 4%;
 }
 .HRXB-text-section {
     display: flex;
@@ -22,8 +22,8 @@
     width: 50%;
 }
 
-.HRBX-head-sub h3 {
-    font-size: 3vw;
+.HRBX-head-sub h2{
+    font-size: calc(3vh + 2vw);
 }
 
 .HRXB-video {
@@ -77,6 +77,6 @@
 }
 
 .HRBX-text-area {
-    font-size: 1.25rem;
+    font-size: calc(1vh + 0.5vw);
     line-height: 2rem;
 }

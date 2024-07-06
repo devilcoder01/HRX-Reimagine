@@ -66,7 +66,7 @@ elements.forEach(function(ele) {
 
   // Mouse enter event
   ele.addEventListener('mouseenter', function() {
-    ele.style.fontSize = '60px';
+    ele.style.fontSize = 'calc(2vh + 1vw)';
     ele.style.backgroundColor = 'transparent';
     ele.style.fontWeight = 'bold';
     ele.style.transition = 'font-size 0.25s ease';

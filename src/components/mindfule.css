@@ -4,7 +4,7 @@
     color: #dadada;
     display: flex;
     justify-content: center;
-    padding: 10rem 0;
+    padding: 10% 0;
     
 
 }
@@ -22,7 +22,6 @@
 
 
 .main-heading{
-    font-size: 4rem;
     text-align: left;
     align-items: center;
     letter-spacing: 0;
@@ -32,13 +31,12 @@
     color: #dadada;
 
 }
-.main-heading h3{
-    font-size: 5rem;
+.main-heading h2{
+    font-size: calc(3vh + 3vw);
 }
 .resource-sec{
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 1%;
     display: flex;
     position: relative;
 
@@ -50,16 +48,15 @@
     color: #dadada;
     background-color: rgba(12, 12, 12, 0);
     border: 2px solid #dadada;
-    border-radius: 25px;
+    border-radius: 1.6vw;
     width: auto;
     min-width: 80px;
     height: auto;
-    margin-right: 2rem;
-    padding: 1rem 1.5rem;
+    margin-right: 1.5vw;
+    padding: 0.8vw 1.5vw;
     font-family: Aeonik, sans-serif;
-    font-size: 1.2rem;
+    font-size: calc(1vh + 0.5vw);
     font-weight: 600;
-    line-height: 1.1rem;
     transition: all .2s ;
 }
 
@@ -71,13 +68,14 @@
 }
 
 .Mindfule-Body{
+    margin-top: 5%;
     display: flex;
     row-gap: 50px;
     flex-direction: column;
     
 }
 .MD-text-sec{
-    width: 603px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -92,21 +90,20 @@
 }
 
 .Mdchild-heading{
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: calc(3vh + 2vw);
+    font-weight: 700;
     
 
 }
 .Mdchild-tagline{
-    font-size: 1.58rem;
+    font-size: calc(1vh + 1vw);
     font-weight: 600;
+    margin: 1.5rem 0;
 
 }
 .Mdchild-content{
-    font-size: 1.15rem;
+    font-size: calc(1vh + 0.5vw);
     word-spacing: 3px;
-    line-height: 1.8rem;
-    margin-top: 1rem;
 }
 
 .MD-image-sec img{

@@ -1,14 +1,14 @@
 
 #cursor-dot {
-    height: 0.35rem;
-    width: 0.35rem;
+    height: 0.3vw;
+    width: 0.3vw;
     background-color: white;
 }
 
 #cursor-outline {
-    height: 2.5rem;
-    width: 2.5rem;
-    border: 2px solid hsla(0, 0%, 100%, 0.68);
+    height: 2vw;
+    width: 2vw;
+    border: 0.12vh solid hsl(0, 0%, 100%);
 }
 
 #cursor-dot,

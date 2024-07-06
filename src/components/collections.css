@@ -1,17 +1,14 @@
 .collection-container {
-  height: 90vh;
   width: 100vw;
   color: white;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
-  margin: 3rem 0;
+  padding: 10vh 0;
 }
 .colc-cen {
   width: 90%;
-  height: 100%;
 }
 .collection-header {
   display: flex;
@@ -19,7 +16,7 @@
   align-items: center;
 }
 .collection-header h2 {
-  font-size: 4rem;
+  font-size: calc(2vh + 3vw);
 }
 .collection-line {
   border: none;
@@ -47,8 +44,8 @@
   overflow: hidden;
 }
 .collection-card {
-  flex: 0 0 20.625rem;
-  height: 28.125rem;
+  flex: 0 0 16.1rem;
+  height: 23rem;
   background-color: gray;
   border-radius: 10px;
   display: flex;

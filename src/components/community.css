@@ -6,7 +6,7 @@
   color: #dadada;
   overflow: hidden;
   height: 100vh;
-  margin: 5rem 0;
+  margin: 6% 0;
   position: relative; /* Add this to enable absolute positioning for the filter */
 }
 
@@ -22,19 +22,19 @@
 
 .community-content {
   flex: 1;
-  max-width: 40%;
+  max-width: 50%;
   position: relative;
   z-index: 5;
 }
 
 .community-content h2 {
-  font-size: 4rem;
+  font-size: calc(3vh + 2vw);
   margin-bottom: 2rem;
   font-weight: 900;
 }
 
 .community-content p {
-  font-size: 1.1rem;
+  font-size: calc(1vh + 0.5vw);
   line-height: 1.6;
   margin-bottom: 1rem;
 }

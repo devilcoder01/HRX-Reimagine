@@ -16,7 +16,7 @@
 
 .run-logo-marque {
   display: flex;
-  width: 300%; /* Adjust based on the number of repeating sections */
+   /* Adjust based on the number of repeating sections */
 }
 
 .m-s-sc {
@@ -27,12 +27,12 @@
 
 .img-elem {
   flex: 0 0 auto;
-  margin: 0 5rem; /* Adjust spacing between logos */
+  margin: 0 6vw; /* Adjust spacing between logos */
 }
 
 .img-size-mrk {
-  height: 6.25rem; /* Fixed height for all logos */
-  width: 6.25rem; /* Fixed width for all logos */
+  height: 6.5vw; /* Fixed height for all logos */
+  width: 6.5vw; /* Fixed width for all logos */
   object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
 

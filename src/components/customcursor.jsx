@@ -42,8 +42,8 @@ const CustomCursor = () => {
     playButton.style.position = 'fixed';
     playButton.style.zIndex = '9999';
     playButton.style.pointerEvents = 'none';
-    playButton.style.width = '0.7rem';
-    playButton.style.height = '0.7rem';
+    playButton.style.width = '0.6vw';
+    playButton.style.height = '0.6vw';
     playButton.style.clipPath = 'polygon(20% 0%, 100% 50%, 20% 100%)';
     playButton.style.backgroundColor = 'white';
     playButton.style.transform = 'translate(-50%, -50%)';

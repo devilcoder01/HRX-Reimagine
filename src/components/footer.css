@@ -20,7 +20,7 @@
     align-items: center;
     background-color: #121212;
     color: white;
-    margin-top: 10rem;
+    margin-top: 7%;
     /* padding: 5rem 0; */
 
 }
@@ -29,7 +29,7 @@
     justify-content: center;
     width: 90%;
     flex-direction: column;
-    gap: 7rem;
+    gap: 15.2vh;
 
 }
 .fot-ch1{
@@ -53,6 +53,7 @@
     row-gap: 2rem;
 }
 .subtxt{
+    font-size: calc(1vh + 0.5vw);
     color: #e8603a;
 }
 .ftimg{
@@ -66,15 +67,14 @@
 
 .frsec {
     display: flex;
-    column-gap: 8rem;
-    /* position: absolute; */
+    column-gap: 5vw;
 }
 
 .fc-col {
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem;
-    font-size: 1.1rem;
+    row-gap: 3vh;
+    font-size: calc(1vh + 0.5vw);
     
 }
 .fot-ch2{
@@ -84,7 +84,7 @@
     align-items: center;
     padding: 1rem 0;
     border-top: 2px solid #373737;
-    /* font-size: 18px; */
+    font-size: calc(0.5vh + 0.5vw);
 }
 .danda {
     width: 20px;
@@ -99,7 +99,7 @@
   
   .nav-cm-logo a {
     color: #fff; /* Adjust color as needed */
-    font-size: 2rem; /* Adjust size as needed */
+    font-size: calc(1vh + 1vw); /* Adjust size as needed */
   }
   .copyright{
     color: #dadada;
