@@ -56,7 +56,7 @@ function MindFule() {
       <div className="Mindfule-2child">
       <div className="Mindfule-Heading">
         <div className="main-heading">
-          <h2><span style={{color:'#E85252'}}>HRX</span> Mind Fule</h2>
+          <h2><span style={{color:'#E85252'}}>HRX</span> Mind Fuel</h2>
         </div>
         <div className="resource-sec">
           <button>Xpod</button>
