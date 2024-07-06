@@ -70,10 +70,10 @@ const MainHeroPage = () => {
           <div className="circles" id="circle2"></div>
           <div id="content-holder" >
             <div id="span1">
-              <h1>gear up for</h1>
+              <h1>Only Yoy Can Define</h1>
             </div>
             <div id="span2">
-              <h1>greatness</h1>
+              <h1>Your Goal</h1>
             </div>
             <button>Join Now</button>
             <div id="circle_div">

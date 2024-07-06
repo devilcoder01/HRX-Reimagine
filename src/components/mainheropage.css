@@ -44,8 +44,8 @@
 #content-holder {
     background-color: transparent;
     position: absolute;
-    top: 7vh;
-    left: 7vw;
+    top: 9vh;
+    left: 5vw;
     color : #2e2e2e;
     z-index: 10;
 }
@@ -59,8 +59,8 @@
 #span2 h1 {
     width: 100%;
     background-color: transparent;
-    font-size: calc(3.5vh + 3.5vw);
-    font-weight: 700;
+    font-size: calc(2vh + 3vw);
+    font-weight: 800;
     text-transform: capitalize;
     color: #2e2e2e;
     line-height: 12vh;
