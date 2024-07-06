@@ -63,9 +63,7 @@ jobs:
         fi
 
         git reset --hard
-        git stash pop || true
-        
-        git rm -rf .
+      
         cp -r dist/* .
         touch .nojekyll
         
