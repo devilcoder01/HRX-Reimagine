@@ -60,14 +60,7 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
         git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
-        git fetch origin
-
-        if git rev-parse --verify origin/gh-pages; then
-          git checkout gh-pages
-        else
-          git checkout --orphan gh-pages
-        fi
-        git commit -m 'Git checkout'
+        git checkout --orphan gh-pages
         git reset --hard
 
         git rm -rf .
