@@ -30,7 +30,6 @@ jobs:
     - name: Deploy to GitHub Pages
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-        PAT: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       run: |
         set -x
         mkdir -p ~/.ssh
@@ -39,32 +38,20 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        pwd
-        ls -la
-        git remote -v
+        
         git remote set-url origin git@github.com:devilcoder01/Hrx-Website.git
-        git remote -v
-        git checkout --orphan gh-pages
+        git fetch origin
+        
+        if git rev-parse --verify origin/gh-pages; then
+          git checkout gh-pages
+        else
+          git checkout --orphan gh-pages
+        fi
+        
         git reset --hard
-        ls -la
         cp -r dist/* .
         touch .nojekyll
-        git status
+        
         git add .
         git commit -m 'Deploy to GitHub Pages'
-        ssh -T git@github.com
-        git log --oneline -n 5
         git push origin gh-pages --force
-
-
-    - name: Debug Info
-      run: |
-          ssh -vT git@github.com
-          git remote -v
-          git branch -a
-    
-    - name: Debug SSH key
-      run: |
-            ls -l ~/.ssh
-            ssh-keygen -l -f ~/.ssh/id_rsa
-            ssh -vT git@github.com
