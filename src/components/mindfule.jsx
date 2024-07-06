@@ -92,7 +92,7 @@ function MindFule() {
           </div>
           <div className="MD-text-sec">
             <div className="Mdchild-heading">
-              Level Up Your Finess Experienc
+              Level Up Your Finess Experience
             </div>
             <div className="Mdchild-tagline" ref={tagline2Ref}>
             {splitTextToSpans("CONTENT TO ENERGIZE YOUR BODY AND MIND")}
