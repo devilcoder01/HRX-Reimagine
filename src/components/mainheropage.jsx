@@ -70,7 +70,7 @@ const MainHeroPage = () => {
           <div className="circles" id="circle2"></div>
           <div id="content-holder" >
             <div id="span1">
-              <h1>Only Yoy Can Define</h1>
+              <h1>Only You Can Define</h1>
             </div>
             <div id="span2">
               <h1>Your Goal</h1>
