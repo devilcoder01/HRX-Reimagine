@@ -5,23 +5,57 @@ import { useGSAP } from '@gsap/react';
 import './mainheropage.css'; // Assuming you have a CSS file for styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
-
+import ReactCurvedText from "react-curved-text";
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 const MainHeroPage = () => {
 
-  const textRef = useRef(null);
+  const [dimensions, setDimensions] = useState({ rx: 65, ry: 65 });
 
   useEffect(() => {
-    const text = textRef.current;
-    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-    const ele = text.querySelectorAll('span');
-    for (let i = 1; i < ele.length; i++) {
-      ele[i].style.transform = `rotate(${i * 15.4}deg)`;
-    }
+    const updateDimensions = () => {
+      const vw = Math.max(
+        document.documentElement.clientWidth || 0,
+        window.innerWidth || 0
+      );
+
+      // Calculate rx and ry based on viewport size
+      // For example, let's say we want rx to be 5vw and ry to be 5vh
+      const newRx = vw * 0.04;
+      const newRy = vw * 0.04;
+
+      setDimensions({ rx: newRx, ry: newRy });
+    };
+
+    // Call it once to set initial dimensions
+    updateDimensions();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", updateDimensions);
+
+    // Clean up
+    return () => window.removeEventListener("resize", updateDimensions);
   }, []);
+  const circletext = (
+    <ReactCurvedText
+      width={300}
+      height={300}
+      cx={150}
+      cy={150}
+      rx={dimensions.rx}
+      ry={dimensions.ry}
+      startOffset="0"
+      reversed={false}
+      text="Join now - Join now - Join now - Join now - Join now - Join now "
+      textProps={{ style: { fontSize: "calc(1vh + 0.5vw)" } }}
+      textPathProps={{"fill": "#2e2e2e"}}
+      tspanProps={null}
+      ellipseProps={null}
+      svgProps={{ className: "rotating-curved-text" }}
+    />
+  );
 
   useGSAP(() => {
     const tl = gsap.timeline();
@@ -77,7 +111,7 @@ const MainHeroPage = () => {
             </div>
             <button>Join Now</button>
             <div id="circle_div">
-              <h3 id="rotate-txt" ref={textRef}> Join Now - Join Now - Join Now - </h3>
+              <div className="roteatetext">{circletext}</div>
               <div id="inner-circle">
                 <FontAwesomeIcon icon={faArrowDownLong} size='2x' color='#dadada' flip="vertical"   />
               </div>
