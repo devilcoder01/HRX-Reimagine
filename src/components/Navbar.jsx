@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./navbar.css";
-import { motion, useCycle } from 'framer-motion'
+import { motion, useCycle } from 'framer-motion';
 import Navmenu from './navmenu';
 import Login from './login';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
-
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 const Path = props => (
   <motion.path
@@ -49,7 +48,7 @@ const MenuToggle = ({ toggle }) => (
 const Navbar = () => {
   const [hideNavbar, setHideNavbar] = useState(false);
   const [isOpen, toggleOpen] = useCycle(false, true);
-
+  const [showLogin, setShowLogin] = useState(false); // State to control login visibility
 
   useEffect(() => {
     let prevScrollpos = window.pageYOffset;
@@ -69,18 +68,17 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleLoginClick = () => {
+    setShowLogin(true); // Show login on button click
+  };
 
   return (
     <div className={`nav ${hideNavbar ? 'hidden' : ''}`}>
       <div className="lboss-nav">
-
-
-
         {/* << --- Nav bar Left Section ---- >>*/}
         <div className="nav-l">
           <img src="https://hrxbrand.com/img/MicrosoftHRX.0fe18b05.png" alt="Logo" />
         </div>
-
 
         {/* << --  Navbar Middle section -- >>*/}
         <motion.nav
@@ -92,21 +90,16 @@ const Navbar = () => {
           <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
 
-
-
         {/*<< ----  Right Section ---- >>*/}
         <div className="nav-r">
-
-            <div className="nav-btn">
-              <button><a href="#">Login</a></button>
-            </div>
-          
+          <div className="nav-btn">
+            <button onClick={handleLoginClick}><a href="#">Login</a></button>
+          </div>
           <div className="cart"><FontAwesomeIcon icon={faCartShopping} /></div>
         </div>
-
       </div>
-        <Navmenu isOpen={isOpen} />
-        {/* <Login isOpen={isOpen} /> */}
+      <Navmenu isOpen={isOpen} />
+      <Login showLogin={showLogin} /> {/* Pass the state to Login component */}
     </div>
   );
 };

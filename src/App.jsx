@@ -6,6 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import MindFule from './components/mindfule';
 import Pfooter from './components/footer'
 import MainHeroPage from './components/mainheropage'
+import Login from './components/login'
 import CustomCursor from './components/customcursor'
 import Collection from './components/collections'
 import Community from './components/community'
@@ -18,6 +19,7 @@ export default function App() {
         <CustomCursor/>
         <Navbar/>
         <MainHeroPage/>
+        <Login/>
         <Collection/>
         <Community />
         <Marque />

@@ -1,9 +1,16 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import "./Login.css";
 
-function Login() {
+const Login = ({ showLogin }) => {
+  
   return (
-    <div className="lm-login-container">
+    <motion.div
+      className="lm-login-container"
+      initial={{ opacity: 0, display: 'none' }}
+      animate={{ opacity: showLogin ? 1 : 0, display: showLogin ? 'flex' : 'none' }} /* Changed to 'flex' */
+      transition={{ duration: 0.9 }}
+    >
       <div className='lm-login-box'>
         <div className="lm-login-left-panel">
           <div className="lm-login-brand">
@@ -22,8 +29,8 @@ function Login() {
           <div className="lm-login-alternative">
             <div>or Sign in with</div>
             <div className="lm-login-social-icons">
-              <img src="src/assets/google.svg" alt="Google" />
-              <img src="src/assets/facebook.svg" alt="Facebook" />
+              <img src="logo/google.svg" alt="Google" />
+              <img src="logo/facebook.png" alt="Facebook" />
             </div>
           </div>
         </div>
@@ -46,8 +53,8 @@ function Login() {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
-}
+};
 
 export default Login;
