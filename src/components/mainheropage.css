@@ -20,7 +20,7 @@
 
 
 .circles {
-    background-color: #E85252;
+    /* background-color: #E85252; */
     position: absolute;
     border-radius: 50%;
     z-index: 1;
@@ -62,7 +62,6 @@
     font-size: calc(2vh + 3vw);
     font-weight: 800;
     text-transform: capitalize;
-    color: #2e2e2e;
     line-height: 12vh;
 }
 
@@ -84,12 +83,13 @@
     height: 19vh;
     width: 19vh;
     border-radius: 50%;
-    background: #E85252;
+    /* background: #E85252; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 1px solid #000101;
+    /* border: 5px solid #0d19f5; */
+    font-family: serif;
 }
 
 #inner-circle {
@@ -143,6 +143,8 @@
     overflow: hidden;
 }
 
+
+
 #stats {
     right: 3vw;
     bottom: 7%;
@@ -185,13 +187,21 @@
 .number {
     font-size: calc(0.5vh + 1vw);
     font-weight: 600;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
 }
 
 .about {
     font-size: 1.68vh;
     font-weight: 400;
 }
+
+
+/* .roteatetext{
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    border: 2px solid aquamarine;
+} */
 
 @keyframes animate {
     from {
@@ -202,3 +212,26 @@
         transform: rotate(360deg);
     }
 }
+
+
+.rotating-curved-text {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+  }
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
