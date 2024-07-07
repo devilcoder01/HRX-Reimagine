@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4%;
+    padding-top: 5%;
     /* overflow-x: hidden; */
     margin-bottom: 6rem;
 }
@@ -46,7 +46,8 @@
     position: absolute;
     top: 9vh;
     left: 5vw;
-    color : #2e2e2e;
+    /* color : #2e2e2e; */
+    color: #dadada;
     z-index: 10;
 }
 
@@ -115,7 +116,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #fbe9e0;
+    
 }
 
 #right_cut {
@@ -123,12 +124,13 @@
     bottom: 7%;
     right: 0;
     transform: scaleX(-1) scaleY(-1);
+    
 }
 
 .rboxcon {
     height: 100%;
     width: 100%;
-    background-image: url("/assets/he1.jpg");
+    /* background-image: url("/assets/he1.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -141,9 +143,41 @@
     clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
     border-radius: calc(2vh + 2vw) 0 0 calc(2vh + 2vw);
     overflow: hidden;
+    background-color: #fbe9e0;
+    position: relative;
 }
 
+#left_cut::before {
+    content: '';
+    position: absolute;
+    /* top: 3px;
+    left: 3px; */
+    margin: 0.35vh;
+    width: 99%;
+    height: 99%;
+    background-color: #000; /* Border color */
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+    border-radius: calc(2vh + 2vw) 0 0 calc(2vh + 2vw);
+    z-index: -1;
+}
 
+#right_cut::before{
+    content: '';
+    position: absolute;
+    margin: 0.35vh;
+    width: 99%;
+    height: 99%;
+    background-color: #000; /* Border color */
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+    border-radius: calc(2vh + 2vw) 0 0 calc(2vh + 2vw);
+    z-index: -1;
+    background-image: url("/assets/he1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* transform: scaleX(-1) scaleY(-1); */
+
+}
 
 #stats {
     right: 3vw;
@@ -165,13 +199,7 @@
     gap: 1vh;
 }
 
-#rotate-txt {
-    height: 16vh;
-    font-size: calc(0.6vh + 0.5vw);
-    animation: animate 5s linear infinite;
-    
 
-}
 #circle_div span {
     position: absolute;
     transform-origin: 0 8vh    ;
@@ -196,12 +224,6 @@
 }
 
 
-/* .roteatetext{
-    position: absolute;
-    height: 20vh;
-    width: 20vh;
-    border: 2px solid aquamarine;
-} */
 
 @keyframes animate {
     from {
@@ -215,9 +237,9 @@
 
 
 .rotating-curved-text {
-    -webkit-animation: spin 4s linear infinite;
-    -moz-animation: spin 4s linear infinite;
-    animation: spin 4s linear infinite;
+    -webkit-animation: spin 15s linear infinite;
+    -moz-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite;
   }
   @-moz-keyframes spin {
     100% {
