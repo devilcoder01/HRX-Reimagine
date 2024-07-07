@@ -84,12 +84,12 @@
     height: 19vh;
     width: 19vh;
     border-radius: 50%;
-    background: #E85252;
+    background: #2e2e2e;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 1px solid #000101;
+    /* border: 1px solid #dadada; */
     font-family: serif;
 }
 
@@ -98,7 +98,7 @@
     width: 11vh;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid #dadada;
     display: flex;
     justify-content: center;
     align-items: center;

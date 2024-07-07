@@ -50,7 +50,7 @@ const MainHeroPage = () => {
       reversed={false}
       text="Join now - Join now - Join now - Join now - Join now - Join now "
       textProps={{ style: { fontSize: "calc(1vh + 0.5vw)" } }}
-      textPathProps={{"fill": "#2e2e2e"}}
+      textPathProps={{"fill": "#dadada"}}
       tspanProps={null}
       ellipseProps={null}
       svgProps={{ className: "rotating-curved-text" }}
